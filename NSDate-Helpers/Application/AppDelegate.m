@@ -8,12 +8,18 @@
 
 #import "AppDelegate.h"
 
+#import "NSDateHelpersUsingViewController.h"
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
+    self.window.rootViewController = [NSDateHelpersUsingViewController new];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
