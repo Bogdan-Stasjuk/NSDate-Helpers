@@ -41,6 +41,9 @@
     
     NSString *currentDateUTC = [NSDate getStringFromDate:[NSDate date] withFormat:NSDateFormatDmy4 andTimeZone:NSDateTimeZoneUTC];
     NSLog(@"Current date %@\n", currentDateUTC);
+    
+    NSDate *date = [NSDate getDateFromString:currentDateTimeUTC withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
+    NSLog(@"Date from string %@\n", date);
 }
 
 - (void)didReceiveMemoryWarning

@@ -25,5 +25,6 @@ typedef NS_ENUM(NSUInteger, NSDateFormat)
 + (NSDictionary *)timeZoneAbbreviations;
 
 + (NSString *)getStringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)timeZone;
++ (NSDate *)getDateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
 @end
