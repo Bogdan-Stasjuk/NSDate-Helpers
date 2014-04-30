@@ -1,6 +1,5 @@
 //
 //  NSDate+Helpers.m
-//  ETL
 //
 //  Created by Bogdan Stasjuk on 4/7/14.
 //
@@ -24,6 +23,20 @@
     return [NSTimeZone abbreviationDictionary];
 }
 
++ (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
+{
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    
+    NSString *timeZoneAbbr = [self timeZoneAbbr:dateTimeZone];
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:timeZoneAbbr];
+    [formatter setTimeZone:timeZone];
+    
+    NSString *dateFormatStr = [self dateFormatString:format];
+    [formatter setDateFormat:dateFormatStr];
+    
+    return formatter;
+}
+
 + (NSString *)getStringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
 {
     NSDateFormatter *dateFormatter = [self dateFormatterWithFormat:format andTimeZone:dateTimeZone];
@@ -45,20 +58,6 @@
 }
 
 #pragma mark -private
-
-+ (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
-{
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    
-    NSString *timeZoneAbbr = [self timeZoneAbbr:dateTimeZone];
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:timeZoneAbbr];
-    [formatter setTimeZone:timeZone];
-    
-    NSString *dateFormatStr = [self dateFormatString:format];
-    [formatter setDateFormat:dateFormatStr];
-
-    return formatter;
-}
 
 + (NSString *)timeZoneAbbr:(NSDateTimeZone)timeZone
 {

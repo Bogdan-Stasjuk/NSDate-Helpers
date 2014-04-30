@@ -1,6 +1,5 @@
 //
 //  NSDate+Helpers.h
-//  ETL
 //
 //  Created by Bogdan Stasjuk on 4/7/14.
 //
@@ -23,6 +22,7 @@ typedef NS_ENUM(NSUInteger, NSDateFormat)
 @interface NSDate (Helpers)
 
 + (NSDictionary *)timeZoneAbbreviations;
++ (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
 + (NSString *)getStringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)timeZone;
 + (NSDate *)getDateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;

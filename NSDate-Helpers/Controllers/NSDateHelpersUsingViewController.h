@@ -8,4 +8,12 @@
 
 @interface NSDateHelpersUsingViewController : UIViewController
 
+#pragma mark - Unavailable methods
+
+#pragma mark -UIViewController
+
+- (id)init __attribute__((unavailable));
+- (id)initWithCoder:(NSCoder *)aDecoder __attribute__((unavailable));
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil __attribute__((unavailable));
+
 @end
