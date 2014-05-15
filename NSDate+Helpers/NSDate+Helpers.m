@@ -14,9 +14,9 @@
 
 @implementation NSDate (Helpers)
 
-#pragma mark - Static methods
+#pragma mark - Public methods
 
-#pragma mark -public
+#pragma mark -Static
 
 + (NSDictionary *)timeZoneAbbreviations
 {
@@ -57,7 +57,25 @@
     return date;
 }
 
-#pragma mark -private
++ (NSDate *)dateWithoutTime:(NSDate *)dateTime
+{
+    if(!dateTime)
+        dateTime = [NSDate date];
+    
+    NSCalendar       *calendar   = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSString *timeZoneAbbr = [self timeZoneAbbr:NSDateTimeZoneUTC];
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:timeZoneAbbr];
+    [calendar setTimeZone:timeZone];
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:dateTime];
+    
+    NSDate *dateOnly = [calendar dateFromComponents:components];
+    
+    return dateOnly;
+}
+
+#pragma mark - Private methods
+
+#pragma mark -Static
 
 + (NSString *)timeZoneAbbr:(NSDateTimeZone)timeZone
 {

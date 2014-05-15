@@ -39,6 +39,8 @@
     
     NSDate *date = [NSDate getDateFromString:currentDateTimeUTC withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
     NSLog(@"Date from string %@\n", date);
+    
+    NSLog(@"Date without time: %@\n", [NSDate dateWithoutTime:nil]);
 }
 
 - (void)didReceiveMemoryWarning
