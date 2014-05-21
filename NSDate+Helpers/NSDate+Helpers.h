@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, NSDateFormat)
 + (NSDate *)getDateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
 + (NSDate *)dateWithoutTime:(NSDate *)dateTime;
++ (NSDate *)nowPlusDays:(NSUInteger)day;
 
 - (BOOL)isEqualToDateIgnoringTime:(NSDate *)otherDate;
 

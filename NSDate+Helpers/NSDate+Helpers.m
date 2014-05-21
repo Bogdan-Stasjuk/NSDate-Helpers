@@ -11,6 +11,8 @@
 #define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define EmptyString @""
 
+#define DAY_IN_SEC 86400
+
 
 @implementation NSDate (Helpers)
 
@@ -71,6 +73,12 @@
     NSDate *dateOnly = [calendar dateFromComponents:components];
     
     return dateOnly;
+}
+
++ (NSDate *)nowPlusDays:(NSUInteger)day
+{
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + day * DAY_IN_SEC;
+    return [NSDate dateWithTimeIntervalSinceReferenceDate:timeInterval];
 }
 
 #pragma mark -Nonstatic

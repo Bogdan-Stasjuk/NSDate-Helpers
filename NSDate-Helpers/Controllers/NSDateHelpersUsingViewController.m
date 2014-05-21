@@ -44,7 +44,10 @@
     
     NSDate *currentDate = [NSDate date];
     NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:1000];
-    NSLog(@"Date %@ is equeal to date %@ ignoring time: %@\n", currentDateUTC, otherDate, [currentDate isEqualToDateIgnoringTime:otherDate] ? @"YES" : @"NO");
+    NSLog(@"Date %@ is equeal to date %@ ignoring time: %@\n", currentDate, otherDate, [currentDate isEqualToDateIgnoringTime:otherDate] ? @"YES" : @"NO");
+    
+    NSUInteger days = 3;
+    NSLog(@"Now %@ plus days %li: %@\n", currentDate, (long)days, [NSDate nowPlusDays:days]);
 }
 
 - (void)didReceiveMemoryWarning
