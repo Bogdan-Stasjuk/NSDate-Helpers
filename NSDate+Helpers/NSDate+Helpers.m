@@ -73,6 +73,17 @@
     return dateOnly;
 }
 
+#pragma mark -Nonstatic
+
+- (BOOL)isEqualToDateIgnoringTime:(NSDate *)otherDate
+{
+    NSDate *dateWithoutTime = [[self class] dateWithoutTime:self];
+    NSDate *otherDateWithoutTime = [[self class] dateWithoutTime:otherDate];
+    
+    return dateWithoutTime.timeIntervalSince1970 == otherDateWithoutTime.timeIntervalSince1970;
+}
+
+
 #pragma mark - Private methods
 
 #pragma mark -Static

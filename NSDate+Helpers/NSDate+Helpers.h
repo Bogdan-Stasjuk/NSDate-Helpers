@@ -29,4 +29,6 @@ typedef NS_ENUM(NSUInteger, NSDateFormat)
 
 + (NSDate *)dateWithoutTime:(NSDate *)dateTime;
 
+- (BOOL)isEqualToDateIgnoringTime:(NSDate *)otherDate;
+
 @end

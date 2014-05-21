@@ -41,6 +41,10 @@
     NSLog(@"Date from string %@\n", date);
     
     NSLog(@"Date without time: %@\n", [NSDate dateWithoutTime:nil]);
+    
+    NSDate *currentDate = [NSDate date];
+    NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:1000];
+    NSLog(@"Date %@ is equeal to date %@ ignoring time: %@\n", currentDateUTC, otherDate, [currentDate isEqualToDateIgnoringTime:otherDate] ? @"YES" : @"NO");
 }
 
 - (void)didReceiveMemoryWarning
