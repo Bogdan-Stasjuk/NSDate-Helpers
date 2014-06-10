@@ -25,14 +25,16 @@
     return [NSTimeZone abbreviationDictionary];
 }
 
++ (NSTimeZone *)timeZone:(NSDateTimeZone)timeZone
+{
+    NSString *timeZoneAbbr = [self timeZoneAbbr:timeZone];
+    return [NSTimeZone timeZoneWithAbbreviation:timeZoneAbbr];
+}
+
 + (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
 {
     NSDateFormatter *formatter = [NSDateFormatter new];
-    
-    NSString *timeZoneAbbr = [self timeZoneAbbr:dateTimeZone];
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:timeZoneAbbr];
-    [formatter setTimeZone:timeZone];
-    
+    [formatter setTimeZone:[self timeZone:dateTimeZone]];
     NSString *dateFormatStr = [self dateFormatString:format];
     [formatter setDateFormat:dateFormatStr];
     
@@ -65,9 +67,7 @@
         dateTime = [NSDate date];
     
     NSCalendar       *calendar   = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSString *timeZoneAbbr = [self timeZoneAbbr:NSDateTimeZoneUTC];
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:timeZoneAbbr];
-    [calendar setTimeZone:timeZone];
+    [calendar setTimeZone:[self timeZone:NSDateTimeZoneUTC]];
     NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:dateTime];
     
     NSDate *dateOnly = [calendar dateFromComponents:components];
