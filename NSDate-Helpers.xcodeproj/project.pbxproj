@@ -526,7 +526,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDate-Helpers/Application/NSDate-Helpers-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NSDate-Helpers/Application/NSDate-Helpers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -539,7 +541,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDate-Helpers/Application/NSDate-Helpers-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NSDate-Helpers/Application/NSDate-Helpers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -603,6 +607,7 @@
 				4BB7977918F4903400E5421B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BB7977A18F4903400E5421B /* Build configuration list for PBXNativeTarget "NSDate-HelpersTests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +616,7 @@
 				4BB7977C18F4903400E5421B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
