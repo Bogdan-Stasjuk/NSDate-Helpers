@@ -3,7 +3,7 @@ NSDate-Helpers
 
 Category on NSDate that includes useful methods for work with date and time.
 
-There are ##ENUMs for TimeZone and DateFormat:
+There are __ENUMs for TimeZone and DateFormat__:
 
 ```objc
 typedef NS_ENUM(NSUInteger, NSDateTimeZone)
@@ -21,6 +21,8 @@ typedef NS_ENUM(NSUInteger, NSDateFormat)
 ```
 
 ##Static methods
+
+```objc
 + (NSDictionary *)timeZoneAbbreviations;
 + (NSTimeZone *)timeZone:(NSDateTimeZone)timeZone;
 + (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
@@ -30,10 +32,13 @@ typedef NS_ENUM(NSUInteger, NSDateFormat)
 
 + (NSDate *)dateWithoutTime:(NSDate *)dateTime;
 + (NSDate *)nowPlusDays:(NSUInteger)day;
+```
 
 ##Nonstatic methods
-- (BOOL)isEqualToDateIgnoringTime:(NSDate *)otherDate;
 
+```objc
+- (BOOL)isEqualToDateIgnoringTime:(NSDate *)otherDate;
+```
 
 Demo
 ====
