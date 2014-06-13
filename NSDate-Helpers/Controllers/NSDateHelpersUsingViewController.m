@@ -28,17 +28,19 @@
     
     NSLog(@"%@", [NSDate timeZoneAbbreviations]);
 
-    NSString *currentDateTimeGMT = [NSDate getStringFromDate:[NSDate date] withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
+    NSString *currentDateTimeGMT = [NSDate stringFromDate:[NSDate date] withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
     NSLog(@"Current date and time GMT %@\n", currentDateTimeGMT);
 
-    NSString *currentDateTimeUTC = [NSDate getStringFromDate:[NSDate date] withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneUTC];
+    NSString *currentDateTimeUTC = [NSDate stringFromDate:[NSDate date] withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneUTC];
     NSLog(@"Current date and time UTC %@\n", currentDateTimeUTC);
     
-    NSString *currentDateUTC = [NSDate getStringFromDate:[NSDate date] withFormat:NSDateFormatDmy4 andTimeZone:NSDateTimeZoneUTC];
+    NSString *currentDateUTC = [NSDate stringFromDate:[NSDate date] withFormat:NSDateFormatDmy4 andTimeZone:NSDateTimeZoneUTC];
     NSLog(@"Current date %@\n", currentDateUTC);
     
-    NSDate *date = [NSDate getDateFromString:currentDateTimeUTC withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
+    NSDate *date = [NSDate dateFromString:currentDateTimeUTC withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
     NSLog(@"Date from string %@\n", date);
+    NSDate *date2 = [NSDate dateFromString:@"11/11/3013 22:5g" withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
+    NSLog(@"Date from string %@\n", date2);
     
     NSLog(@"Date without time: %@\n", [NSDate dateWithoutTime:nil]);
     

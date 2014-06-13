@@ -116,12 +116,7 @@
 			children = (
 				4BB7977D18F4914B00E5421B /* Application */,
 				4BB7978318F4914B00E5421B /* Controllers */,
-				4BB7978418F4914B00E5421B /* Helpers */,
-				4BB7978518F4914B00E5421B /* Library */,
-				4BB7978618F4914B00E5421B /* Models */,
 				4BB7978718F4914B00E5421B /* Resources */,
-				4BB7979418F4914B00E5421B /* Vendors */,
-				4BB7979518F4914B00E5421B /* Views */,
 			);
 			name = "NSDate+HelpersUsing";
 			path = "NSDate-Helpers";
@@ -167,34 +162,11 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4BB7978418F4914B00E5421B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		4BB7978518F4914B00E5421B /* Library */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		4BB7978618F4914B00E5421B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		4BB7978718F4914B00E5421B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				4BB7978818F4914B00E5421B /* Assets */,
-				4BB7978F18F4914B00E5421B /* Data */,
 				4BB7979018F4914B00E5421B /* Localizations */,
-				4BB7979318F4914B00E5421B /* NIBs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -203,8 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				4BB7978918F4914B00E5421B /* Images */,
-				4BB7978D18F4914B00E5421B /* Sound */,
-				4BB7978E18F4914B00E5421B /* Video */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -213,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				4BB7978A18F4914B00E5421B /* Default */,
-				4BB7978C18F4914B00E5421B /* Icon */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -226,77 +195,12 @@
 			path = Default;
 			sourceTree = "<group>";
 		};
-		4BB7978C18F4914B00E5421B /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Icon;
-			sourceTree = "<group>";
-		};
-		4BB7978D18F4914B00E5421B /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sound;
-			sourceTree = "<group>";
-		};
-		4BB7978E18F4914B00E5421B /* Video */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
-		4BB7978F18F4914B00E5421B /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		4BB7979018F4914B00E5421B /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
 				4BB7979118F4914B00E5421B /* InfoPlist.strings */,
 			);
 			path = Localizations;
-			sourceTree = "<group>";
-		};
-		4BB7979318F4914B00E5421B /* NIBs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NIBs;
-			sourceTree = "<group>";
-		};
-		4BB7979418F4914B00E5421B /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendors;
-			sourceTree = "<group>";
-		};
-		4BB7979518F4914B00E5421B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4BB7979618F4914B00E5421B /* TableCells */,
-				4BB7979718F4914B00E5421B /* TableViews */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4BB7979618F4914B00E5421B /* TableCells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableCells;
-			sourceTree = "<group>";
-		};
-		4BB7979718F4914B00E5421B /* TableViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableViews;
 			sourceTree = "<group>";
 		};
 		4BB7979D18F492B500E5421B /* NSDate+Helpers */ = {
@@ -480,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -512,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -525,6 +429,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDate-Helpers/Application/NSDate-Helpers-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DEBUG=1",
+					"DEBUG_NSDATE=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/NSDate-Helpers/Application/NSDate-Helpers-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

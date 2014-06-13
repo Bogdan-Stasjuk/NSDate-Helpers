@@ -41,7 +41,7 @@
     return formatter;
 }
 
-+ (NSString *)getStringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
++ (NSString *)stringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
 {
     NSDateFormatter *dateFormatter = [self dateFormatterWithFormat:format andTimeZone:dateTimeZone];
     NSString *dateStr = [dateFormatter stringFromDate:date];
@@ -49,15 +49,14 @@
     return dateStr;
 }
 
-+ (NSDate *)getDateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
++ (NSDate *)dateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone
 {
     NSDateFormatter *dateFormatter = [self dateFormatterWithFormat:format andTimeZone:dateTimeZone];
     NSDate *date = [dateFormatter dateFromString:string];
+#ifdef DEBUG_NSDATE
     if (!date)
-    {
         ALog("can not parse the string \"%@\"", string);
-    }
-    
+#endif
     return date;
 }
 
