@@ -27,9 +27,14 @@
     [super viewDidLoad];
     
     NSLog(@"%@", [NSDate timeZoneAbbreviations]);
+    NSLog(@"Date and time: %@\n", [NSDate date]);
+    NSLog(@"Date and time with seconds at current local: %@\n", [[NSDate date] descriptionWithLocale:[NSLocale systemLocale]]);
 
     NSString *currentDateTimeGMT = [NSDate stringFromDate:[NSDate date] withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneGMT];
     NSLog(@"Current date and time GMT %@\n", currentDateTimeGMT);
+
+    NSString *currentDateTimeSecGMT = [NSDate stringFromDate:[NSDate date] withFormat:NSDateFormatHms24 andTimeZone:NSDateTimeZoneGMT];
+    NSLog(@"Current date and time GMT %@\n", currentDateTimeSecGMT);
 
     NSString *currentDateTimeUTC = [NSDate stringFromDate:[NSDate date] withFormat:NSDateFormatDmy4Hm24 andTimeZone:NSDateTimeZoneUTC];
     NSLog(@"Current date and time UTC %@\n", currentDateTimeUTC);

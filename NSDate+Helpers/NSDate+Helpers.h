@@ -5,15 +5,14 @@
 //
 //
 
-typedef NS_ENUM(NSUInteger, NSDateTimeZone)
-{
+typedef NS_ENUM(NSUInteger, NSDateTimeZone) {
     NSDateTimeZoneUTC,
     NSDateTimeZoneGMT,
 };
 
-typedef NS_ENUM(NSUInteger, NSDateFormat)
-{
+typedef NS_ENUM(NSUInteger, NSDateFormat) {
     NSDateFormatHm24,
+    NSDateFormatHms24,
     NSDateFormatDmy4,
     NSDateFormatDmy4Hm24,
 };

@@ -259,6 +259,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bogdan Stasjuk";
 				TargetAttributes = {
+					4BB7974A18F4903400E5421B = {
+						DevelopmentTeam = 8F6JY4MWEV;
+					};
 					4BB7976518F4903400E5421B = {
 						TestTargetID = 4BB7974A18F4903400E5421B;
 					};
@@ -437,6 +440,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/NSDate-Helpers/Application/NSDate-Helpers-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,6 +456,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/NSDate-Helpers/Application/NSDate-Helpers-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
