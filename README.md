@@ -6,19 +6,29 @@ Category on NSDate that includes useful methods for work with date and time.
 There are __ENUMs for TimeZone and DateFormat__:
 
 ```objc
-typedef NS_ENUM(NSUInteger, NSDateTimeZone)
-{
+typedef NS_ENUM(NSUInteger, NSDateTimeZone) {
     NSDateTimeZoneUTC,
     NSDateTimeZoneGMT,
 };
 
-typedef NS_ENUM(NSUInteger, NSDateFormat)
-{
+typedef NS_ENUM(NSUInteger, NSDateFormat) {
     NSDateFormatHm24,
+    NSDateFormatHms24,
     NSDateFormatDmy4,
     NSDateFormatDmy4Hm24,
 };
 ```
+
+And __constants__ for often used time intervals in seconds:
+
+```objc
+static NSUInteger const BSMinute    = 60;
+static NSUInteger const BSHour      = 3600;
+static NSUInteger const BSDay       = 86400;
+static NSUInteger const BSWeek      = 604800;
+static NSUInteger const BSYear      = 31556926;
+```
+
 
 ##Static methods
 
