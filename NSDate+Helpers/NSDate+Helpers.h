@@ -18,6 +18,13 @@ typedef NS_ENUM(NSUInteger, NSDateFormat) {
 };
 
 
+static NSUInteger const BSMinute    = 60;
+static NSUInteger const BSHour      = 3600;
+static NSUInteger const BSDay       = 86400;
+static NSUInteger const BSWeek      = 604800;
+static NSUInteger const BSYear      = 31556926;
+
+
 @interface NSDate (Helpers)
 
 + (NSDictionary *)timeZoneAbbreviations;
