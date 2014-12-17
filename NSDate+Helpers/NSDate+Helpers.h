@@ -5,16 +5,16 @@
 //
 //
 
-typedef NS_ENUM(NSUInteger, NSDateTimeZone) {
-    NSDateTimeZoneUTC,
-    NSDateTimeZoneGMT,
+typedef NS_ENUM(UInt8, NSDateTimeZone) {
+  NSDateTimeZoneUTC,
+  NSDateTimeZoneGMT,
 };
 
-typedef NS_ENUM(NSUInteger, NSDateFormat) {
-    NSDateFormatHm24,
-    NSDateFormatHms24,
-    NSDateFormatDmy4,
-    NSDateFormatDmy4Hm24,
+typedef NS_ENUM(UInt8, NSDateFormat) {
+  NSDateFormatHm24,
+  NSDateFormatHms24,
+  NSDateFormatDmy4,
+  NSDateFormatDmy4Hm24,
 };
 
 
@@ -32,6 +32,7 @@ static NSUInteger const BSYear      = 31556926;
 + (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
 + (NSString *)stringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)timeZone;
++ (NSString *)stringFromDate:(NSDate *)date withFormatString:(NSString *)format andTimeZone:(NSDateTimeZone)timeZone;
 + (NSDate *)dateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
 + (NSDate *)dateWithoutTime:(NSDate *)dateTime;
