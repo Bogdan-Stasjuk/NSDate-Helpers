@@ -31,8 +31,9 @@ static NSUInteger const BSYear      = 31556926;
 + (NSTimeZone *)timeZone:(NSDateTimeZone)timeZone;
 + (NSDateFormatter *)dateFormatterWithFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
++ (NSString *)stringFromDate:(NSDate *)date withFormatString:(NSString *)formatString andTimeZone:(NSDateTimeZone)timeZone;
 + (NSString *)stringFromDate:(NSDate *)date withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)timeZone;
-+ (NSString *)stringFromDate:(NSDate *)date withFormatString:(NSString *)format andTimeZone:(NSDateTimeZone)timeZone;
++ (NSDate *)dateFromString:(NSString *)string withFormatString:(NSString *)formatString andTimeZone:(NSDateTimeZone)dateTimeZone;
 + (NSDate *)dateFromString:(NSString *)string withFormat:(NSDateFormat)format andTimeZone:(NSDateTimeZone)dateTimeZone;
 
 + (NSDate *)dateWithoutTime:(NSDate *)dateTime;

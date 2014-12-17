@@ -10,11 +10,6 @@
 		4BB7974F18F4903400E5421B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7974E18F4903400E5421B /* Foundation.framework */; };
 		4BB7975118F4903400E5421B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7975018F4903400E5421B /* CoreGraphics.framework */; };
 		4BB7975318F4903400E5421B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7975218F4903400E5421B /* UIKit.framework */; };
-		4BB7976818F4903400E5421B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7976718F4903400E5421B /* XCTest.framework */; };
-		4BB7976918F4903400E5421B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7974E18F4903400E5421B /* Foundation.framework */; };
-		4BB7976A18F4903400E5421B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB7975218F4903400E5421B /* UIKit.framework */; };
-		4BB7977218F4903400E5421B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7977018F4903400E5421B /* InfoPlist.strings */; };
-		4BB7977418F4903400E5421B /* NSDate_HelpersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7977318F4903400E5421B /* NSDate_HelpersTests.m */; };
 		4BB7979818F4914B00E5421B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7977F18F4914B00E5421B /* AppDelegate.m */; };
 		4BB7979918F4914B00E5421B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7978018F4914B00E5421B /* main.m */; };
 		4BB7979B18F4914B00E5421B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7978B18F4914B00E5421B /* Images.xcassets */; };
@@ -23,26 +18,12 @@
 		4BB797A318F4936100E5421B /* NSDateHelpersUsingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB797A218F4936100E5421B /* NSDateHelpersUsingViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4BB7976B18F4903400E5421B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BB7974318F4903400E5421B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BB7974A18F4903400E5421B;
-			remoteInfo = "NSDate-Helpers";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4BB7974B18F4903400E5421B /* NSDate-Helpers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSDate-Helpers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB7974E18F4903400E5421B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BB7975018F4903400E5421B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4BB7975218F4903400E5421B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4BB7976618F4903400E5421B /* NSDate-HelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSDate-HelpersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB7976718F4903400E5421B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4BB7976F18F4903400E5421B /* NSDate-HelpersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSDate-HelpersTests-Info.plist"; sourceTree = "<group>"; };
-		4BB7977118F4903400E5421B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4BB7977318F4903400E5421B /* NSDate_HelpersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDate_HelpersTests.m; sourceTree = "<group>"; };
 		4BB7977E18F4914B00E5421B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BB7977F18F4914B00E5421B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4BB7978018F4914B00E5421B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,16 +48,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BB7976318F4903400E5421B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BB7976818F4903400E5421B /* XCTest.framework in Frameworks */,
-				4BB7976A18F4903400E5421B /* UIKit.framework in Frameworks */,
-				4BB7976918F4903400E5421B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,7 +56,6 @@
 			children = (
 				4BB7979D18F492B500E5421B /* NSDate+Helpers */,
 				4BB7975418F4903400E5421B /* NSDate+HelpersUsing */,
-				4BB7976D18F4903400E5421B /* NSDate+HelpersTests */,
 				4BB7974D18F4903400E5421B /* Frameworks */,
 				4BB7974C18F4903400E5421B /* Products */,
 			);
@@ -95,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				4BB7974B18F4903400E5421B /* NSDate-Helpers.app */,
-				4BB7976618F4903400E5421B /* NSDate-HelpersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,25 +89,6 @@
 			);
 			name = "NSDate+HelpersUsing";
 			path = "NSDate-Helpers";
-			sourceTree = "<group>";
-		};
-		4BB7976D18F4903400E5421B /* NSDate+HelpersTests */ = {
-			isa = PBXGroup;
-			children = (
-				4BB7977318F4903400E5421B /* NSDate_HelpersTests.m */,
-				4BB7976E18F4903400E5421B /* Supporting Files */,
-			);
-			name = "NSDate+HelpersTests";
-			path = "NSDate-HelpersTests";
-			sourceTree = "<group>";
-		};
-		4BB7976E18F4903400E5421B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4BB7976F18F4903400E5421B /* NSDate-HelpersTests-Info.plist */,
-				4BB7977018F4903400E5421B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4BB7977D18F4914B00E5421B /* Application */ = {
@@ -232,24 +182,6 @@
 			productReference = 4BB7974B18F4903400E5421B /* NSDate-Helpers.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BB7976518F4903400E5421B /* NSDate-HelpersTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BB7977A18F4903400E5421B /* Build configuration list for PBXNativeTarget "NSDate-HelpersTests" */;
-			buildPhases = (
-				4BB7976218F4903400E5421B /* Sources */,
-				4BB7976318F4903400E5421B /* Frameworks */,
-				4BB7976418F4903400E5421B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4BB7976C18F4903400E5421B /* PBXTargetDependency */,
-			);
-			name = "NSDate-HelpersTests";
-			productName = "NSDate-HelpersTests";
-			productReference = 4BB7976618F4903400E5421B /* NSDate-HelpersTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,9 +193,6 @@
 				TargetAttributes = {
 					4BB7974A18F4903400E5421B = {
 						DevelopmentTeam = 8F6JY4MWEV;
-					};
-					4BB7976518F4903400E5421B = {
-						TestTargetID = 4BB7974A18F4903400E5421B;
 					};
 				};
 			};
@@ -280,7 +209,6 @@
 			projectRoot = "";
 			targets = (
 				4BB7974A18F4903400E5421B /* NSDate-Helpers */,
-				4BB7976518F4903400E5421B /* NSDate-HelpersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,14 +220,6 @@
 			files = (
 				4BB7979B18F4914B00E5421B /* Images.xcassets in Resources */,
 				4BB7979C18F4914B00E5421B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BB7976418F4903400E5421B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BB7977218F4903400E5421B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,33 +237,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BB7976218F4903400E5421B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BB7977418F4903400E5421B /* NSDate_HelpersTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4BB7976C18F4903400E5421B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BB7974A18F4903400E5421B /* NSDate-Helpers */;
-			targetProxy = 4BB7976B18F4903400E5421B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		4BB7977018F4903400E5421B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BB7977118F4903400E5421B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		4BB7979118F4914B00E5421B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -462,46 +358,6 @@
 			};
 			name = Release;
 		};
-		4BB7977B18F4903400E5421B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSDate-Helpers.app/NSDate-Helpers";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSDate-Helpers/NSDate-Helpers-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NSDate-HelpersTests/NSDate-HelpersTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4BB7977C18F4903400E5421B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSDate-Helpers.app/NSDate-Helpers";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSDate-Helpers/NSDate-Helpers-Prefix.pch";
-				INFOPLIST_FILE = "NSDate-HelpersTests/NSDate-HelpersTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -519,15 +375,6 @@
 			buildConfigurations = (
 				4BB7977818F4903400E5421B /* Debug */,
 				4BB7977918F4903400E5421B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4BB7977A18F4903400E5421B /* Build configuration list for PBXNativeTarget "NSDate-HelpersTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BB7977B18F4903400E5421B /* Debug */,
-				4BB7977C18F4903400E5421B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
