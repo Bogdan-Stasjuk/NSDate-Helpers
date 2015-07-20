@@ -190,11 +190,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bogdan Stasjuk";
-				TargetAttributes = {
-					4BB7974A18F4903400E5421B = {
-						DevelopmentTeam = 8F6JY4MWEV;
-					};
-				};
 			};
 			buildConfigurationList = 4BB7974618F4903400E5421B /* Build configuration list for PBXProject "NSDate-Helpers" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -326,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDate-Helpers/Application/NSDate-Helpers-Prefix.pch";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
@@ -347,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDate-Helpers/Application/NSDate-Helpers-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/NSDate-Helpers/Application/NSDate-Helpers-Info.plist";

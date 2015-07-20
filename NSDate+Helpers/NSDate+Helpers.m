@@ -62,9 +62,9 @@
   if(!dateTime) {
     dateTime = [NSDate date];
   }
-  NSCalendar       *calendar   = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+  NSCalendar       *calendar   = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
   [calendar setTimeZone:[self timeZone:NSDateTimeZoneUTC]];
-  NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:dateTime];
+  NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:dateTime];
   
   NSDate *dateOnly = [calendar dateFromComponents:components];
   
